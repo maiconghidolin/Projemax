@@ -241,11 +241,11 @@
 
         function slideTopBar(){
             if ($('#iangleupdown').hasClass('fa fa-angle-up')){
-                $("#menu").addClass("slide"); 
+                $("#menu").removeClass("slidemobile"); 
                 $('#iangleupdown').removeClass('fa fa-angle-up');
                 $('#iangleupdown').addClass('fa fa-angle-down');
             }else{
-                $("#menu").removeClass("slide"); 
+                $("#menu").addClass("slidemobile"); 
                 $('#iangleupdown').removeClass('fa fa-angle-down');
                 $('#iangleupdown').addClass('fa fa-angle-up');
             }
