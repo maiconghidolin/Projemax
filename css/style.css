@@ -66,10 +66,6 @@ body, html {
     -o-transition: all 0.4s ease-out;
     transition:  all 0.4s ease-out;}
 
-.navbar-nav  li  a:hover {}
-
-.navbar-nav  li  a:focus {}
-
 .down-button {
     display: none;
     text-align: center;
@@ -97,8 +93,7 @@ body, html {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;}
 
-.intro-message h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);}
+.intro-message h3 {text-shadow: 2px 2px 3px rgba(0,0,0,0.6);}
 
 .intro-divider {
     width: 500px;
@@ -111,38 +106,52 @@ body, html {
     font-weight: 400;
     letter-spacing: 2px;}
 
-.content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;}
+.about {
+    padding-top: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
 
-.content-section-b {
-    padding: 50px 0;
+.services {
+    padding-top: 20px;
+    text-align: center;
     border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;}
+    border-bottom: 1px solid #e7e7e7;
+}
 
-.section-heading {margin-bottom: 30px;}
+.portfolio {
+    padding-top: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
 
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;}
+.contact {
+    padding-top: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
 
-.banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
-    background-size: cover;}
+.services i{
+    padding: 30px;
+    background: #ddd;
+    font-size: 20px;
+}
 
-.banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;}
+.title {
+    padding-bottom: 20px;
+}
 
-.banner ul {margin-bottom: 0;}
+.title h2{
+    font-weight: 600;
+    color: #777;
+}
 
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;}
+.title-row {
+    border-top: 3px solid #e7e7e7;
+    width: 600px;
+}
 
 @media(max-width:767px) {
     .navbar-fixed-top {
@@ -188,6 +197,8 @@ body, html {
         padding: 0;}
 
     ul.banner-social-buttons > li:last-child {margin-bottom: 0;}
+
+    .title-row {width: 300px;}
 }
 
 @media(max-width:1199px) {
