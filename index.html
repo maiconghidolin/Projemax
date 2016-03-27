@@ -14,17 +14,11 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/style1.css" rel="stylesheet">
+    
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 <body>
@@ -33,10 +27,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-6">
-                        <div class="phone-mail">
-                                <i class="fa fa-phone"> <a>Fone: (49) 1111 1111</a></i>
-                                <i class="fa fa-envelope"> <a>Email: email@hotmail.com</a></i>
-                        </div> 
+                        <div class="phone-mail" >
+                            <ul class="list-inline">
+                                <li>
+                                    <a onclick="scrollToElement('#contact');">
+                                        <div class="phone-mail-box">
+                                            <i class="fa fa-phone"></i> (49) 1111 1111
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="scrollToElement('#contact');">
+                                        <div class="phone-mail-box">
+                                            <i class="fa fa-envelope"></i> email@hotmail.com
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-sm-6 col-md-6">
                         <div class="social">
@@ -50,12 +58,13 @@
                                     <i class="fa fa-facebook"></i>
                                 </div>
                             </a>
-                            <a href="skype:#">
+                            <a href="#">
                                 <div class="social-box">
                                     <i class="fa fa-twitter"></i>
                                 </div>
                             </a>
                         </div>
+                        </ul>
                     </div>
                 </div>
             </div>     
@@ -65,31 +74,55 @@
                 <i class="fa fa-angle-down" id="iangleupdown"></i>
             </a>
             <div class="container topnav">
-                <div class="navbar-header">
+                <div class="navbar-header ">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand topnav" href="#home">PROJEMAX</a>
+                    <a class="navbar-brand topnav" onclick="scrollToElement('#home');">
+                        <div class="header-box">
+                            PROJEMAX
+                        </div>
+                    </a>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse header" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a onclick="scrollToElement('#home');">HOME</a>
+                            <a onclick="scrollToElement('#home');">
+                                <div class="header-box">
+                                    HOME
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <a onclick="scrollToElement('#about');">SOBRE</a>
+                            <a onclick="scrollToElement('#about');">
+                                <div class="header-box">
+                                    SOBRE
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <a onclick="scrollToElement('#services');">SERVIÇOS</a>
+                            <a onclick="scrollToElement('#services');">
+                                <div class="header-box">
+                                    SERVIÇOS
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <a onclick="scrollToElement('#portfolio');">PORTFÓLIO</a>
+                            <a onclick="scrollToElement('#portfolio');">
+                                <div class="header-box">
+                                    PORTFÓLIO
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <a onclick="scrollToElement('#contact');">CONTATO</a>
+                            <a onclick="scrollToElement('#contact');">
+                                <div class="header-box">
+                                    CONTATO
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -107,13 +140,13 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i></a>
                             </li>
                             <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -140,22 +173,22 @@
                 <hr class="title-row">
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-3">
                     <i class="fa fa-search img-circle" ></i>
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-3">
                     <i class="fa fa-search img-circle" ></i>
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-3">
                     <i class="fa fa-search img-circle" ></i>
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-3">
                     <i class="fa fa-search img-circle" ></i>
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
@@ -164,14 +197,99 @@
         </div>
     </div>
 
-    <div class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="title">
-                <h2>Portfólio</h2>
-                <hr class="title-row">
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="title">
+                    <h2>Portfólio</h2>
+                    <hr class="title-row">
+                </div>
+
+                <div class="row" id="filter-container">
+                        <ul class="list-inline intro-social-buttons" style="height: auto;">
+                                <li>
+                                    <figure >
+                                        <a class="thumb"><img alt="alt" src="http://luiszuno.com/themes/folder/img/dummies/featured/01.jpg"></a>
+                                        <figcaption>
+                                            <h3 class="heading">Pellentesque </h3>
+                                                Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure >
+                                        <a class="thumb" ><img alt="alt" src="http://luiszuno.com/themes/folder/img/dummies/featured/02.jpg"></a>
+                                        <figcaption>
+                                            <h3 class="heading">Pellentesque habitant morbi</h3>
+                                                Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure >
+                                        <a class="thumb" ><img alt="alt" src="http://luiszuno.com/themes/folder/img/dummies/featured/03.jpg"></a>
+                                        <figcaption>
+                                            <h3 class="heading">Habitant morbi</h3>
+                                                Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure >
+                                        <a class="thumb" ><img alt="alt" src="http://luiszuno.com/themes/folder/img/dummies/featured/04.jpg"></a>
+                                        <figcaption>
+                                            <h3 class="heading">Pellentesque habitant morbi</h3>
+                                                Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure >
+                                        <a class="thumb" ><img alt="alt" src="http://luiszuno.com/themes/folder/img/dummies/featured/05.jpg"></a>
+                                        <figcaption>
+                                            <h3 class="heading">Habitant morbi</h3>
+                                                Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure >
+                                        <a class="thumb" ><img alt="alt" src="http://luiszuno.com/themes/folder/img/dummies/featured/06.jpg"></a>
+                                        <figcaption>
+                                            <h3 class="heading">Pellentesque habitant morbi</h3>
+                                                Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure >
+                                        <a class="thumb" ><img alt="alt" src="http://luiszuno.com/themes/folder/img/dummies/featured/02.jpg"></a>
+                                        <figcaption>
+                                            <h3 class="heading">Pellentesque habitant morbi</h3>
+                                                Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure >
+                                        <a class="thumb" ><img alt="alt" src="http://luiszuno.com/themes/folder/img/dummies/featured/02.jpg"></a>
+                                        <figcaption>
+                                            <h3 class="heading">Habitant morbi</h3>
+                                                Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure >
+                                        <a class="thumb" ><img alt="alt" src="http://luiszuno.com/themes/folder/img/dummies/featured/02.jpg"></a>
+                                        <figcaption>
+                                            <h3 class="heading">Pellentesque habitant morbi</h3>
+                                                Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. </figcaption>
+                                    </figure>
+                                </li>
+
+                            </ul>
+                </div>
+
             </div>
         </div>
-    </div>
 
     <div class="contact" id="contact">
         <div class="container">
@@ -180,24 +298,32 @@
                 <hr class="title-row">
             </div>
             <div class="row">
-                <ul class="lista-contato">
-                    <li><i class="fa fa-map-marker"></i> Rua Mascarenhas de Moraes, 33E, Chapecó - SC, CEP 89812510</li>
-                    <li><i class="fa fa-phone"></i> (49) 1111 1111</li>
-                    <li><i class="fa fa-envelope"></i> email@hotmail.com</li>
-                    <li>
-                        <div class="social-contact">
-                            <a href="#">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="col-sm-6 col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.6561765372985!2d-52.646461185354106!3d-27.10413500774215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b445e924ac23%3A0x46c719c0de37ec9d!2sR.+V%C3%ADtor+Palma%2C+2+-+Parque+das+Palmeiras%2C+Chapec%C3%B3+-+SC%2C+89803-750!5e0!3m2!1spt-BR!2sbr!4v1459040568771" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <ul class="lista-contato">
+                        <li><i class="fa fa-map-marker"></i> R. Vítor Palma, 2 - Parque das Palmeiras Chapecó - SC 89803-750</li>
+                        <li><i class="fa fa-phone"></i> (49) 1111 1111</li>
+                        <li><i class="fa fa-phone"></i> (49) 1111 1111</li>
+                        <li><i class="fa fa-envelope"></i> email@hotmail.com</li>
+                        <li>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons">
+                                <li>
+                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-twitter fa-fw"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-facebook fa-fw"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-linkedin fa-fw"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -206,28 +332,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">Sobre</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Serviços</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#portfolio">Portfólio</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contato</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Projemax 2015.</p>
+                    <p class="copyright text-muted meddium">Copyright &copy; Projemax <span id="spnAno"></span>.</p>
                 </div>
             </div>
         </div>
@@ -247,6 +352,10 @@
                     }
                 }
             });
+
+            var today = new Date();
+            var year = today.getFullYear();
+            $("#spnAno").html(year);
 
         });
 

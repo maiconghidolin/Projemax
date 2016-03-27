@@ -21,26 +21,37 @@ body, html {
     font-size: 16px;
     color: #d7d7d7;}
 
-.phone-mail a {font-size: 15px; margin-right: 20px; margin-left: 3px; color: #d7d7d7; text-decoration: none;}
+.phone-mail a {cursor: pointer; color: #d7d7d7; text-decoration: none;}
 
-.phone-mail i {font-size: 18px}
+.phone-mail i {font-size: 16px}
+
+.phone-mail a:hover .phone-mail-box {color: #fff; transform: scale(1.1);}
+
+.phone-mail-box {
+    float: left;
+    margin-right: 20px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition:  all 0.2s ease-out;}
 
 .social a {color: #d7d7d7;}
 
 .social i {font-size: 20px;}
 
-.social a:hover .social-box{color: #fff; transform: scale(1.5);}
+.social a:hover .social-box{transform: scale(1.5);}
 
 .social-box{
     text-align: center;
     min-width: 34px;
     float: right;
     margin-left: 5px;
-    -webkit-transition: all 0.4s ease-out;
-    -moz-transition: all 0.4s ease-out;
-    -ms-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    transition:  all 0.4s ease-out;}
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition:  all 0.2s ease-out;}
 
 .navbar-brand {font-size: 20px;}
 
@@ -59,14 +70,16 @@ body, html {
 
 .navbar-default {background-color: #fff;}
 
-.navbar-nav  li  a {
-    -webkit-transition: all 0.4s ease-out;
-    -moz-transition: all 0.4s ease-out;
-    -ms-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    transition:  all 0.4s ease-out;
+.header a:hover .header-box {color: #777; transform: scale(1.2);}
+
+.header-box {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition:  all 0.2s ease-out;
     cursor: pointer;
-}
+    width: 100%;}
 
 .down-button {
     display: none;
@@ -111,86 +124,113 @@ body, html {
 .about {
     padding-top: 20px;
     text-align: center;
-    background-color: #f8f8f8;
-}
+    background-color: #f8f8f8;}
 
 .services {
     padding-top: 20px;
     text-align: center;
     border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
+    border-bottom: 1px solid #e7e7e7;}
 
 .services i{
     padding: 30px;
     background: #ddd;
-    font-size: 20px;
-}
+    font-size: 20px;}
 
 .portfolio {
     padding-top: 20px;
     text-align: center;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
-    background-color: #f8f8f8;
-}
+    background-color: #f8f8f8;}
 
 .contact {
     padding-top: 20px;
-    text-align: center;
+    padding-bottom: 20px;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
-    color: #5a5c5d;
-}
+    color: #5a5c5d;}
 
 .lista-contato{
     list-style: none;
-}
+    margin-top: 30px;}
 
-.lista-contato li{
-    padding: 5px 5px 5px 18px;
-    line-height: 25px;
-    position: relative;
-}
+.lista-contato li{ 
+    padding: 5px 0 5px 10px;
+    line-height: 25px;}
 
 .lista-contato li i{
     margin-right: 5px;
-    font-size: 20px;
-}
+    font-size: 20px;}
 
-.social-contact{
-    border-radius: 2px;
-}
-.social-contact a{
-    height: 18px;
-    margin: 0 6px 6px 0;
-    padding: 7px 0 12px;
-    width: 38px;
-    background: #4b4c4d none repeat scroll 0 0;
-    color: #fff
+.lista-contato hr {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 0;}
+
+.lista-contato .intro-social-buttons{text-align: center;}
+
+.lista-contato .intro-social-buttons li{
+    padding-left: 0px;}
+
+.lista-contato .intro-social-buttons li i{
+    margin-right: 0px;
+    font-size: 25px;
 }
 
 .title {
     padding-bottom: 20px;
-    text-align: center;
-}
+    text-align: center;}
 
 .title h2{
     font-weight: 600;
-    color: #777;
-}
+    color: #777;}
 
 .title-row {
     border-top: 3px solid #e7e7e7;
-    width: 600px;
-}
+    width: 600px;}
+
+.btn-group-lg > .btn, .btn-lg {
+    border-radius: 26px;
+    font-size: 40px;
+    line-height: 1.5;
+    padding: 5px 12px;
+    background-color: inherit;
+    color: #fff;}
+
+.btn-group-sm > .btn, .btn-sm {
+    background-color: inherit;
+    border-radius: 20px;
+    font-size: 40px;
+    line-height: 1;
+    padding: 0 12px 11px;}
 
 @media(max-width:767px) {
+
+    .lista-contato{
+    padding-left: 0px}
+
+    .list-inline > li {
+        display: list-item !important;
+    }
+
+    .phone-mail-box {
+        float: none;
+        margin-right: 0px !important;
+        margin-bottom: 9px !important;
+    }
+
+    .header a {
+        text-align: center;
+        width: 95%;
+        padding-left: 30px !important;
+    }
+
     .navbar-fixed-top {
         top: 5px;
-        padding-top: 0px;}
+        padding: 0 10px 25px;}
 
-    .navbar-fixed-top.slidemobile{top: 70px}
+    .navbar-fixed-top.slidemobile{top: 85px}
 
     .phone-mail {
         text-align: center;
@@ -241,7 +281,7 @@ body, html {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 30px 0;
     background-color: #f8f8f8;}
 
-p.copyright {margin: 15px 0 0;}
+p.copyright {text-align: center;}
