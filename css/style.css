@@ -97,7 +97,7 @@ body, html {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro5.jpg) no-repeat center center;
+    background: url(../img/intro6.jpg) no-repeat center center;
     background-size: cover;}
 
 .intro-message {
@@ -137,9 +137,12 @@ body, html {
     border-bottom: 1px solid #e7e7e7;}
 
 .services i{
-    padding: 30px;
+    padding: 20px;
     background: #ddd;
-    font-size: 26px;}
+    font-size: 16px;}
+
+.serv h2{
+    font-size: 17px;}
 
 .services .serv:hover .services-box {transform: scale(1.1);}
 
@@ -208,8 +211,8 @@ body, html {
     font-size: 40px;
     line-height: 1.5;
     padding: 5px 12px;
-    background-color: inherit;
-    color: #fff;}
+    background-color: #e6e6e6;
+    color: #333;}
 
 .btn-group-sm > .btn, .btn-sm {
     background-color: inherit;
